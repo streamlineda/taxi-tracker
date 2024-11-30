@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Taxi</title>
+</head>
+<body>
+    <h1>Form Request Taxi</h1>
+    <form action="/submit-request" method="POST">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="pickup">Lokasi Penjemputan:</label>
+        <select id="pickup" name="pickup" required>
+            <option value="PCI">PCI</option>
+            <option value="Bojonegara">Bojonegara</option>
+            <option value="Anyer">Anyer</option>
+            <option value="Cilegon Kota">Cilegon Kota</option>
+            <option value="Serang Timur">Serang Timur</option>
+        </select>
+        <br>
+        <label for="time">Waktu Penjemputan:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+        <label for="dept">Departemen:</label>
+        <input type="text" id="dept" name="dept" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

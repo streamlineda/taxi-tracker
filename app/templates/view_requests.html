@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Request Taxi</title>
+</head>
+<body>
+    <h1>Data Request Taxi</h1>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Lokasi Penjemputan</th>
+            <th>Waktu</th>
+            <th>Departemen</th>
+        </tr>
+        {% for req in requests %}
+        <tr>
+            <td>{{ req.name }}</td>
+            <td>{{ req.pickup }}</td>
+            <td>{{ req.time }}</td>
+            <td>{{ req.dept }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
